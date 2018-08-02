@@ -1,0 +1,12 @@
+{
+	"public": {
+		"ga": {
+			"account": "UA-XXXXXXXX-X"
+		}
+	},
+    "galaxy.meteor.com": { 
+       "env": { 
+         "MONGO_URL": "mongodb://sidechain:fixuplooksharp@ds151127.mlab.com:51127/northern-bass-db" 
+       } 
+    }
+}

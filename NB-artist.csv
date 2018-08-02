@@ -1,0 +1,61 @@
+setOrder,date ,startTime,endTime,stage,name
+1,29,12:00,14:00,jungle,TwoFace
+2,29,14:00,15:00,jungle,Totems
+3,29,15:00,16:30,jungle,Yoko Zuna + Third3ye
+4,29,16:30,17:30,jungle,Akil the MC
+5,29,17:30,19:00,jungle,Tokimonsta
+6,29,19:00,20:30,jungle,Cut Chemist
+7,29,20:30,22:00,jungle,Lunice
+8,29,22:00,0:00,jungle,Calyx and Teebee with SP:MC
+1,30,10:00,12:00,jungle,Oaariki
+2,30,12:00,13:30,jungle,Soultrader
+3,30,13:30,14:00,jungle,Tom Francis
+4,30,14:00,15:30,jungle,Bugsy
+5,30,15:30,16:15,jungle,Tali Live
+6,30,16:15,17:00,jungle,Spycc + INF
+7,30,17:00,18:00,jungle,Died in 69
+8,30,18:00,18:45,jungle,Sacha Vee
+9,30,18:45,20:15,jungle,Montell 2099
+10,30,20:15,21:45,jungle,Safire
+11,30,21:45,23:15,jungle,Spectrasoul
+12,30,23:15,0:45,jungle,Dylan C
+13,30,0:45,2:15,jungle,Pitch Black
+14,30,2:15,4:00,jungle,Alix Perez / Ivy Lab
+1,30,15:00,16:15,main,Haan808
+2,30,16:15,17:30,main,Electric Wire Hustle
+3,30,17:30,18:30,main,Pacific Heights
+4,30,18:30,19:30,main,Newham Generals
+5,30,19:30,20:30,main,Che Fu
+6,30,20:30,21:15,main,Novelist
+7,30,21:15,22:30,main,Scribe & P-Money
+8,30,22:30,11:30,main,JME
+9,30,11:30,1:00,main,Chase & Status
+10,30,1:00,2:30,main,Noisia
+1,30,11:00,18:00,lagoon,George FM
+1,31,10:30,12:45,jungle,Israel Carter
+2,31,12:45,14:15,jungle,Optimus Gryme & 3rd Law
+3,31,14:15,15:15,jungle,Scizzorhands
+4,31,15:15,16:15,jungle,Vilette
+5,31,16:15,17:45,jungle,Cern
+6,31,17:45,19:15,jungle,Onra
+7,31,19:15,20:45,jungle,Dom & Roland
+8,31,20:45,22:15,jungle,Icicle LIVE
+9,31,22:15,23:45,jungle,Eprom
+10,31,23:45,0:30,jungle,Team Dynamite
+11,31,0:30,2:00,jungle,Ekali
+12,31,2:00,3:30,jungle,Truth
+13,31,3:30,5:00,jungle,Om Unit
+1,31,15:45,16:45,main,Maala
+2,31,16:45,17:45,main,Souls Of Mischief
+3,31,17:45,19:15,main,Krafty Kuts
+4,31,19:15,20:15,main,DubFX
+5,31,20:15,21:00,main,Krept & Konan
+6,31,21:00,22:30,main,Hudson Mohawke
+7,31,22:30,0:00,main,Goldie vs dBridge
+8,31,0:00,1:30,main,Bad Company
+9,31,1:30,3:15,main,The Upbeats + MC Tali
+1,31,11:00,12:30,lagoon,Eavesdrop
+2,31,12:30,14:00,lagoon,Chiccoreli + Tali
+3,31,14:00,15:30,lagoon,Lady Banton
+4,31,15:30,16:30,lagoon,Bailey Wiley
+5,31,16:30,18:00,lagoon,Concord Dawn

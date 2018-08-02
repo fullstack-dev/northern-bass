@@ -1,0 +1,132 @@
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#wrapper.toggled {
+    padding-right: 0px;
+}
+#sidebar-wrapper {
+    z-index: 9999999;
+    position: fixed;
+    right: 250px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #03122B;;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#wrapper.toggled #sidebar-wrapper {
+    width: 100%;
+}
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-left: -300px;
+}
+
+/* Sidebar Styles */
+#menu-close {
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    color: #fff;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 20vh;
+    width: 100%;
+    padding: 0 0 0 20px;
+    list-style: none;
+}
+.sidebar-nav li {
+    text-transform: uppercase;
+}
+.sidebar-nav li a {
+    font-weight: 700;
+    margin-top: 1px;
+    font-size: 12px;
+    letter-spacing: .2rem;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 1.5em;
+}
+.sidebar-nav li.active a {
+    color:#00eda6;
+}
+/*.sidebar-nav li a:hover {
+    text-decoration: none;
+    background: rgba(255,255,255,0.2);
+}*/
+
+.sidebar-nav li a:active, .sidebar-nav li a:hover, .sidebar-nav li a:focus {
+    text-decoration: none;
+    background:transparent;
+}
+.sidebar-nav .fa-angle-right {
+    display: none;
+}
+.fa-bars {
+    color:#fff;
+}
+.fa-bars:active, .fa-bars:focus {
+    color:#fff;
+}
+.menu-container {
+    position: fixed;
+    z-index:1001;
+    padding: .5em;
+    width: 100vw;
+    transition:ease all .3s;
+    -webkit-transition:ease all .3s;    
+}
+#menu-toggle {
+    z-index: 99999999;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding-top: 2px;
+    padding-right: 8px;
+}
+@media(min-width:768px) {
+#wrapper {
+padding-left: 0;
+}
+/* #wrapper.toggled {
+padding-left: 250px;
+} */
+#sidebar-wrapper {
+width: 0;
+}
+#wrapper.toggled #sidebar-wrapper {
+width: 60%;
+}
+#page-content-wrapper {
+position: absolute;
+}
+#wrapper.toggled #page-content-wrapper {
+position: absolute;
+}
+}
+
+
+/* ACTIVE STATE */
+
+.sidebar-nav li.active {
+    font-weight: 700;
+}
+

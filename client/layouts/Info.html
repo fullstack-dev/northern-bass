@@ -1,0 +1,13 @@
+<template name="Info">
+	<h3 class="page-title">Information</h3>
+	<div class="container info-accordion animated in out">
+	  <div class="panel-group" id="accordion">
+			{{#each info}}
+				{{>InfoItem}}
+			{{/each}}
+	  </div>
+	  <div class="background-img">
+			<img src="/img/stage_jungle_small.jpg">
+		</div>
+	</div>
+</template>

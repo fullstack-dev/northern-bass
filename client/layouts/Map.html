@@ -1,0 +1,13 @@
+<template name="map">  
+	<div>
+		{{> Sidebar}}
+		{{> Footer}}
+	</div>
+	<div class="container map-cont">
+		<main>
+			<div id="nbMap" class="map-container">
+				{{> googleMap name="festivalMap" options=mapOptions}}
+			</div>
+		</main>
+	</div>
+</template>  

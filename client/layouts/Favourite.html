@@ -1,0 +1,30 @@
+<template name="Favourite">
+	<div id="favourited" class="stage-test container col-xs-12 {{stage}} {{#if inFavourites}}in-favs{{/if}} vertical-align animated in out">
+		<div class="set-details container col-xs-2">
+			<h5 class="stage-date" id="date">{{date}}</h5><span> DEC</span>
+			<h4 class="set-time" id="startTime">{{startTime}}</h4>
+			<h4 class="set-end-time" id="endTime" style="display:none;">{{endTime}}</h4>
+		</div>
+		<div class="set-details-2 container col-xs-8">
+			<h4 class="set-name" id="name">{{name}}</h4>
+			<h5 class="stage-text" id="stage">{{stage}}</h5>	
+		</div>
+		<div class="fav-container container col-xs-2">
+			<button class="remove remove-fav toggle-fav vertical-align">
+				<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 56 55" xml:space="preserve">
+				<g>
+					<path d="M26,0C11.664,0,0,11.663,0,26s11.664,26,26,26s26-11.663,26-26S40.336,0,26,0z M26,50C12.767,50,2,39.233,2,26
+						S12.767,2,26,2s24,10.767,24,24S39.233,50,26,50z"/>
+					<path d="M35.707,16.293c-0.391-0.391-1.023-0.391-1.414,0L26,24.586l-8.293-8.293c-0.391-0.391-1.023-0.391-1.414,0
+						s-0.391,1.023,0,1.414L24.586,26l-8.293,8.293c-0.391,0.391-0.391,1.023,0,1.414C16.488,35.902,16.744,36,17,36
+						s0.512-0.098,0.707-0.293L26,27.414l8.293,8.293C34.488,35.902,34.744,36,35,36s0.512-0.098,0.707-0.293
+						c0.391-0.391,0.391-1.023,0-1.414L27.414,26l8.293-8.293C36.098,17.316,36.098,16.684,35.707,16.293z"/>
+				</g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+				</svg>
+			</button>
+		</div>
+	</div>
+</template>
+
+
+

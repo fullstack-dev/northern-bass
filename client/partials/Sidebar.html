@@ -1,0 +1,19 @@
+<template name="Sidebar">
+    <div id="wrapper">
+        <div class="col-lg-12 menu-container vertical-align">
+            {{> MainLogo}}
+            <a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+        </div>
+        <div id="sidebar-wrapper">
+            <a href="#menu-close" id="menu-close"><i class="fa fa fa-times fa-2x" aria-hidden="true"></i></a>
+            <ul class="sidebar-nav nav">
+                {{> NavItem href='/'  name='home'}}
+                {{> NavItem href='/set-times'  name='set times'}}
+                {{> NavItem href='/map'  name='map'}}
+                {{> NavItem href='/favourites'  name='favourites'}}
+                {{> NavItem href='/food-and-drink'  name='food and drink'}}
+                {{> NavItem href='/info'  name='info'}}
+            </ul>
+        </div>
+    </div>
+</template>

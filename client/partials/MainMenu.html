@@ -1,0 +1,13 @@
+<template name="MainMenu">
+    <h3 class="page-title"><i class="fa fa-home" aria-hidden="true"></i>
+HOME </h3>
+    <div class="slideout-menu col-xs-12">
+        <ul class="nav">
+            {{> setTimeMainNavItem href='/set-times'  name='Set Times'}}
+            {{> mapMainNavItem href='/map'  name='Map'}}
+            {{> favMainNavItem href='/favourites'  name='Favourites'}}
+            {{> vendorsMainNavItem href='/food-and-drink'  name='Food and Drink'}}
+            {{> infoMainNavItem href='/info'  name='Info'}}
+        </ul>
+    </div> 
+</template>          

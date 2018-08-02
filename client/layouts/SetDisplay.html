@@ -1,0 +1,142 @@
+<template name="SetDisplay">
+        <div class="container lineup-area animated in">
+            <h3 class="page-title">SET TIMES </h3>
+            <ul class="nav nav-tabs set-tabs" id="dateTabs" role="tablist">
+                <li role="presentation" class="col-xs-4 text-center active">
+                    <a href="#jungleOne" id="drop-left" aria-controls="home" role="tab" data-toggle="tab" aria-haspopup="true" aria-expanded="false">29TH</a>
+                </li>
+                <li role="presentation" class="dropdown col-xs-4 text-center">
+                    <a class="dropdown-toggle" id="drop-middle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">30TH 
+                        <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu drop-stages" aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
+                        <li>
+                            <a href="#mainTwo" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1" aria-expanded="true">MAIN STAGE</a>
+                        </li>
+                        <li>
+                            <a href="#jungleTwo" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1" aria-expanded="true">JUNGLE STAGE</a>
+                        </li>
+                        <li>
+                            <a href="#otherTwo" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1" aria-expanded="true">LAGOON</a>
+                        </li>
+                    </ul>
+                </li>
+                <li role="presentation" class="dropdown col-xs-4 text-center">
+                    <a class="dropdown-toggle" id="drop-right" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">31ST 
+                        <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu drop-stages-right" aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
+                        <li>
+                            <a href="#mainThree" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1" aria-expanded="true">MAIN STAGE</a>
+                        </li>
+                        <li>
+                            <a href="#jungleThree" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1" aria-expanded="true">JUNGLE STAGE</a>
+                        </li>
+                        <li>
+                            <a href="#otherThree" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1" aria-expanded="true">LAGOON</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+          <!-- Tab panes -->
+            {{#if Template.subscriptionsReady}}
+                <div class="tab-content">      
+                    <div role="tabpanel" class="jungle tab-pane active" id="jungleOne">  
+                        {{#transition in="fadeInUpBig:500"}}     
+                            {{#each artistSetDateOne}}
+                                {{> DateSet}}
+                            {{/each}}
+                        {{/transition}}    
+                    </div>
+                    <div role="tabpanel" class="main tab-pane" id="mainTwo">
+                        {{#transition in="fadeInUpBig:500"}} 
+                            {{#each artistSetDateTwo}}
+                                {{> DateSet}}
+                            {{/each}}
+                        {{/transition}}     
+                    </div>
+                    <div role="tabpanel" class="jungle tab-pane" id="jungleTwo">
+                        {{#transition in="fadeInUpBig:500"}} 
+                            {{#each artistSetDateThree}}
+                                {{> DateSet}}
+                            {{/each}}
+                        {{/transition}}      
+                    </div>
+                    <div role="tabpanel" class="lagoon tab-pane" id="otherTwo">
+                        {{#transition in="fadeInUpBig:500"}} 
+                            {{#each artistSetDateFour}}
+                                {{> DateSet}}
+                            {{/each}}
+                        {{/transition}}      
+                    </div>
+                    <div role="tabpanel" class="main tab-pane" id="mainThree">
+                        {{#transition in="fadeInUpBig:500"}} 
+                            {{#each artistSetDateFive}}
+                                {{> DateSet}}
+                            {{/each}}
+                        {{/transition}}      
+                    </div>
+                    <div role="tabpanel" class="jungle tab-pane" id="jungleThree">
+                        {{#transition in="fadeInUpBig:500"}} 
+                            {{#each artistSetDateSix}}
+                                {{> DateSet}}
+                            {{/each}}
+                        {{/transition}}      
+                    </div>
+                    <div role="tabpanel" class="lagoon tab-pane" id="otherThree">
+                        {{#transition in="fadeInUpBig:500"}} 
+                            {{#each artistSetDateSeven}}
+                                {{> DateSet}}
+                            {{/each}}
+                        {{/transition}}      
+                    </div>
+                </div>
+            {{else}}
+                <svg id="loading-svg" width="57" height="57" viewBox="0 0 57 57" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+                    <g fill="none" fill-rule="evenodd">
+                        <g transform="translate(1 1)" stroke-width="2">
+                            <circle cx="5" cy="50" r="5">
+                                <animate attributeName="cy"
+                                     begin="0s" dur="2.2s"
+                                     values="50;5;50;50"
+                                     calcMode="linear"
+                                     repeatCount="indefinite" />
+                                <animate attributeName="cx"
+                                     begin="0s" dur="2.2s"
+                                     values="5;27;49;5"
+                                     calcMode="linear"
+                                     repeatCount="indefinite" />
+                            </circle>
+                            <circle cx="27" cy="5" r="5">
+                                <animate attributeName="cy"
+                                     begin="0s" dur="2.2s"
+                                     from="5" to="5"
+                                     values="5;50;50;5"
+                                     calcMode="linear"
+                                     repeatCount="indefinite" />
+                                <animate attributeName="cx"
+                                     begin="0s" dur="2.2s"
+                                     from="27" to="27"
+                                     values="27;49;5;27"
+                                     calcMode="linear"
+                                     repeatCount="indefinite" />
+                            </circle>
+                            <circle cx="49" cy="50" r="5">
+                                <animate attributeName="cy"
+                                     begin="0s" dur="2.2s"
+                                     values="50;50;5;50"
+                                     calcMode="linear"
+                                     repeatCount="indefinite" />
+                                <animate attributeName="cx"
+                                     from="49" to="49"
+                                     begin="0s" dur="2.2s"
+                                     values="49;5;27;49"
+                                     calcMode="linear"
+                                     repeatCount="indefinite" />
+                            </circle>
+                        </g>
+                    </g>
+                </svg>
+            {{/if}}
+        </div>
+</template>

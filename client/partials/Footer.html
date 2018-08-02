@@ -1,0 +1,10 @@
+<template name="Footer">
+	<div class="navbar navbar-inverse navbar-fixed-bottom fx-nav" role="navigation">
+		<ul class="foot-nav">
+			{{> setTimeFooterNavItem href='/set-times'  name='set times'}}
+			{{> mapFooterNavItem href='/map'  name='map'}}
+			{{> favFooterNavItem href='/favourites'  name='favourites'}}
+			{{> infoFooterNavItem href='/info'  name='info'}}
+		</ul>
+	</div>
+</template>

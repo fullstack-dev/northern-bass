@@ -1,0 +1,27 @@
+{
+	"restName": "Fatimas",
+	"nameId": "fatimas",
+	"restDesc": "This is a description of the food that is being served.",
+	"subMenuTitle": "Food",
+	"subMenuDesc": "This is a description of the food that is being served.",
+	"menuItems": {
+		"itemTitle": "Chicken Pita",
+		"itemDesc": "freshly rolled & toasted with marinated chicken, tabbouleh, red cabbage, iceberg, tomato relish and cucumber & minted yoghurt",
+		"price": "12.20"
+		}
+		{
+		"itemTitle": "Falafel Pita",
+		"itemDesc": "freshly rolled & toasted with chickpea patties, hummus, tabbouleh, red cabbage, iceberg, tomato relish and garlic sauce",
+		"price": "12.20"
+		}
+		{
+		"itemTitle": "Lamb Pita",
+		"itemDesc": "freshly rolled & toasted with spiced lamb, tabbouleh, red cabbage, iceberg, tomato relish and garlic sauce",
+		"price": "12.40"
+		}
+		{
+		"itemTitle": "Potato Kofta",
+		"itemDesc": "bite sized croquettes with sweet chilli aioli",
+		"price": "6.40"
+		}
+}

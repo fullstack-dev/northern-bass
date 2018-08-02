@@ -1,0 +1,53 @@
+.fx-nav {
+	position: fixed;
+	bottom:0;
+	max-height: 60px;
+	height: 60px;
+	background-color: #03122B !important;
+	z-index: 101;
+	width:100%;
+	padding: 12px 18px 0 18px;
+	color:#fff;
+	border: none !important;
+}
+.fx-nav p {
+	font-weight: 700;
+	font-size: 6px;
+	letter-spacing: .2em;
+	color:#fff;
+	text-transform: uppercase;
+}
+.nb-logo {
+	max-width: 42px;
+	padding: 4px 0 !important;
+	margin-left: -10px !important;
+}
+.footer-icon {
+	max-width: 24px;
+	margin-bottom: 4px;
+}
+.foot-nav {
+	list-style: none;
+	padding: 0;
+}
+.foot-nav li {
+	padding: 0 10px;
+}
+.foot-nav .active a p {
+	color: #00eda6;
+	transition: ease all .3s;
+	-webkit-transition: ease all .3s;
+}
+#footer-nav-item svg {
+	vertical-align: middle;
+}
+#footer-nav-item svg path, #footer-nav-item svg rect {
+	fill:#fff;
+	transition: ease all .3s;
+	-webkit-transition: ease all .3s;	
+}
+.active #footer-nav-item svg path, .active #footer-nav-item svg rect {
+	fill:#00eda6;
+	transition: ease all .3s;
+	-webkit-transition: ease all .3s;
+}

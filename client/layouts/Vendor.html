@@ -1,0 +1,30 @@
+<template name="Vendor">
+	<div class="panel-group" id="accordion">
+		<a class="menu-panel" id="{{nameId}}" data-toggle="collapse" data-parent="#accordion" href="#panel-{{nameId}}">
+			<div class="food-article container-fluid vertical-align panel panel-default">
+				<div class="col-xs-10 food-desc">
+					<h3>{{restName}}</h3>
+				</div>
+				<div class="col-xs-2 btn-cont">
+					<div class="menu-btn"><img id="rotate" src="/plus.svg"><p>MENU</p></div>
+				</div>
+			</div>
+		</a>
+		<div id="panel-{{nameId}}" class="panel-collapse collapse">
+			<div class="submenu">
+				<h5>{{subMenuTitle}}</h5>
+		    	<p>{{subMenuDesc}}</p>
+			</div>
+
+		    {{#each menuItems}}
+			    <div class="panel-body menu-body vertical-align">
+			    	<div class="col-xs-9">
+			    		<h5 class="item-title">{{itemTitle}}</h5>
+			    		<p class="item-desc">{{itemDesc}}</p>
+			    	</div>
+				    <h5 class="col-xs-3 item-price">${{price}}</h5>
+			    </div>
+		    {{/each}}
+		</div>
+	</div>
+</template>

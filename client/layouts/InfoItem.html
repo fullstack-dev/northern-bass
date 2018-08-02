@@ -1,0 +1,32 @@
+<template name="InfoItem">
+	<div class="panel panel-default">
+	  <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ number }}" class="collapsed">
+	    <div class="panel-heading">
+	    	<h4 class="panel-title col-xs-9">{{ title }} </h4>
+	    	<div class="col-xs-3 expand-btn">
+	    		<p class="more-container container col-xs-2">				
+						<button class="btn-primary vertical-align">
+							<svg 
+							id="moreInfo"
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							width="9px" height="9px"
+							viewbox="0 0 18 18"
+							x="0px" y="0px" 
+							xml:space="preserve"
+							name="{{this.name}}"
+							class="like-set">
+							<path fill-rule="evenodd" 
+							d="M18.000,9.170 C18.000,10.019 17.321,10.698 16.472,10.698 L10.359,10.698 L10.359,16.472 C10.359,17.321 9.679,18.000 8.830,18.000 C7.981,18.000 7.302,17.321 7.302,16.472 L7.302,10.698 L1.528,10.698 C0.679,10.698 0.000,10.019 0.000,9.170 C0.000,8.321 0.679,7.642 1.528,7.642 L7.302,7.642 L7.302,1.528 C7.302,0.679 7.981,-0.000 8.830,-0.000 C9.679,-0.000 10.359,0.679 10.359,1.528 L10.359,7.642 L16.472,7.642 C17.321,7.642 18.000,8.321 18.000,9.170 Z"/>
+							</svg>
+						</button>
+					</p>
+	    	</div>
+	    </div>
+	  </a>
+	  <div id="collapse{{ number }}" class="panel-collapse collapse">
+	    <div class="panel-body">{{ details }}</div>
+	  </div>
+	</div>
+</template>
